@@ -145,10 +145,10 @@ yabai -m config window_gap 3
 # - below
 # - normal
 # - above
-yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
-yabai -m rule --add app="^System Preferences*" manage=off
+yabai -m rule --add app="^iStat*" sticky=on layer=above
 
 # disable specific apps
+yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Calculator$" manage=off
