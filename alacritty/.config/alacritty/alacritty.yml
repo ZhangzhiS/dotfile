@@ -109,6 +109,14 @@ mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
   hide_when_typing: true
+  enabled: true
+
+scrolling:  
+  # 回滚缓冲区中的最大行数。 设置为 0 会禁用滚动
+  history: 10000
+
+  # 一次滚动几行
+  multiplier: 3
 
 debug:
   # Should display the render timer

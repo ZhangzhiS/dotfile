@@ -157,6 +157,8 @@ yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WeChat$" manage=off
 yabai -m rule --add app="^微信$" manage=off
+yabai -m rule --add app="^访达$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^HapiGo$" manage=off
 yabai -m rule --add app="^Font Book$" manage=off
 yabai -m rule --add app="^NeatDownloadManager$" manage=off
