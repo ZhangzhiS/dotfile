@@ -85,6 +85,6 @@ alt(";", { "space --layout bsp" })
 alt("tab", { "space --focus recent" })
 
 -- 创建新的活动空间
-shiftAltThenSketchybar("n", { "space --create" }, { "--trigger windows_on_spaces" })
+shiftAltThenSketchybar("n", { "space --create" }, { "--trigger window_focus" })
 -- 删除当前活动空间
 shiftAltThenSketchybar("d", { "space --destroy" }, { "--trigger window_focus" })
