@@ -6,8 +6,9 @@
 # sudo yabai --load-sa
 # 也可以在该配置文件中增加这句，这样每次重启系统时不用自己输入
 # yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+brew services restart sketchybar
 
 # global settings
 yabai -m config mouse_follows_focus off
@@ -158,6 +159,8 @@ yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WeChat$" manage=off
 yabai -m rule --add app="^Microsoft To Do$" manage=off
 yabai -m rule --add app="^微信$" manage=off
+yabai -m rule --add app="^企业微信$" manage=off
+yabai -m rule --add app="^系统设置$" manage=off
 yabai -m rule --add app="^访达$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^HapiGo$" manage=off
