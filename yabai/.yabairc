@@ -171,6 +171,8 @@ yabai -m rule --add app="^NeatDownloadManager$" manage=off
 yabai -m rule --add app="^Tencent Lemon$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 # yabai -m rule --add app="^TencentMeeting$" manage=off
+# yabai -m rule --add app="^(哔哩哔哩)$" title!="^(哔哩哔哩 \(゜-゜\)つロ 干杯~-bilibili)$" manage=off layer=above
+yabai -m rule --add app="^Google Chrome$" title="^MetaMask - Google Chrome$" manage=off layer=above
 
 echo "yabai configuration loaded.."
 
