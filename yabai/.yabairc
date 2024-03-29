@@ -146,12 +146,12 @@ yabai -m config window_gap 3
 # - below
 # - normal
 # - above
-yabai -m rule --add app="^iStat*" sticky=on layer=above
+yabai -m rule --add app="^iStat*" sticky=on
 
 # disable specific apps
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
+yabai -m rule --add app="^System Information$" sticky=on manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Preview$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
@@ -172,7 +172,7 @@ yabai -m rule --add app="^Tencent Lemon$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 # yabai -m rule --add app="^TencentMeeting$" manage=off
 # yabai -m rule --add app="^(哔哩哔哩)$" title!="^(哔哩哔哩 \(゜-゜\)つロ 干杯~-bilibili)$" manage=off layer=above
-yabai -m rule --add app="^Google Chrome$" title="^MetaMask - Google Chrome$" manage=off layer=above
+yabai -m rule --add app="^Google Chrome$" title="^MetaMask - Google Chrome$" manage=off
 
 echo "yabai configuration loaded.."
 

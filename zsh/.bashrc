@@ -41,3 +41,11 @@ export LC_ALL=zh_CN.UTF-8
 
 
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

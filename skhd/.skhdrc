@@ -1,0 +1,231 @@
+#----------------------------------------------------------------------------------------
+# Focus Space
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Focus space]: Space #1
+alt - 1 : yabai -m space --focus 1
+#KeyClu[Focus space]: Space #2
+alt - 2 : yabai -m space --focus 2
+#KeyClu[Focus space]: Space #3
+alt - 3 : yabai -m space --focus 3
+#KeyClu[Focus space]: Space #4
+alt - 4 : yabai -m space --focus 4
+#KeyClu[Focus space]: Space #5
+alt - 5 : yabai -m space --focus 5
+#KeyClu[Focus space]: Space #6
+alt - 6 : yabai -m space --focus 6
+#KeyClu[Focus space]: Space #7
+alt - 7 : yabai -m space --focus 7
+#KeyClu[Focus space]: Space #8
+alt - 8 : yabai -m space --focus 8
+#KeyClu[Focus space]: Space #9
+alt - 9 : yabai -m space --focus 9
+
+#----------------------------------------------------------------------------------------
+# Move windows between spaces & follow focus
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Send Window/follow Focus]: Space #1
+alt + shift - 1 : yabai -m window --space 1; yabai -m space --focus 1
+#KeyClu[Send Window/follow Focus]: Space #2
+alt + shift - 2 : yabai -m window --space 2; yabai -m space --focus 2
+#KeyClu[Send Window/follow Focus]: Space #3
+alt + shift - 3 : yabai -m window --space 3; yabai -m space --focus 3
+#KeyClu[Send Window/follow Focus]: Space #4
+alt + shift - 4 : yabai -m window --space 4; yabai -m space --focus 4
+#KeyClu[Send Window/follow Focus]: Space #5
+alt + shift - 5 : yabai -m window --space 5; yabai -m space --focus 5
+#KeyClu[Send Window/follow Focus]: Space #6
+alt + shift - 6 : yabai -m window --space 6; yabai -m space --focus 6
+#KeyClu[Send Window/follow Focus]: Space #7
+alt + shift - 7 : yabai -m window --space 7; yabai -m space --focus 7
+#KeyClu[Send Window/follow Focus]: Space #8
+alt + shift - 8 : yabai -m window --space 8; yabai -m space --focus 8
+#KeyClu[Send Window/follow Focus]: Space #9
+alt + shift - 9 : yabai -m window --space 9; yabai -m space --focus 9
+
+#----------------------------------------------------------------------------------------
+# Move windows between spaces & don't follow focus
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Send Window/don't focus]: Space #1
+hyper - 1 : yabai -m window --space 1
+#KeyClu[Send Window/don't focus]: Space #2
+hyper - 2 : yabai -m window --space 2
+#KeyClu[Send Window/don't focus]: space #3
+hyper - 3 : yabai -m window --space 3
+#KeyClu[Send Window/don't focus]: space #4
+hyper - 4 : yabai -m window --space 4
+#KeyClu[Send Window/don't focus]: space #5
+hyper - 5 : yabai -m window --space 5
+#KeyClu[Send Window/don't focus]: space #6
+hyper - 6 : yabai -m window --space 6
+#KeyClu[Send Window/don't focus]: space #7
+hyper - 7 : yabai -m window --space 7
+#KeyClu[Send Window/don't focus]: space #8
+hyper - 8 : yabai -m window --space 8
+#KeyClu[Send Window/don't focus]: space #9
+hyper - 9 : yabai -m window --space 9
+
+#----------------------------------------------------------------------------------------
+# Focus windows
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Focus window]: West
+alt - h : yabai -m window --focus west || yabai -m display --focus west
+#KeyClu[Focus window]: South
+alt - j : yabai -m window --focus south || yabai -m display --focus south
+#KeyClu[Focus window]: North
+alt - k : yabai -m window --focus north || yabai -m display --focus north
+#KeyClu[Focus window]: East
+alt - l : yabai -m window --focus east || yabai -m display --focus east
+#KeyClu[Focus window]: Create
+shift + alt - n : yabai -m space --create
+#KeyClu[Focus window]: Delete
+shift + alt - d : yabai -m space --destroy; yabai -m space --trigger window_focus
+
+#----------------------------------------------------------------------------------------
+# Warp windows
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Warp window]: West
+alt + shift - h : yabai -m window --warp west  || $(yabai -m window --display west; yabai -m display --focus west)
+#KeyClu[Warp window]: South
+alt + shift - j : yabai -m window --warp south || $(yabai -m window --display south; yabai -m display --focus south)
+#KeyClu[Warp window]: North
+alt + shift - k : yabai -m window --warp north || $(yabai -m window --display north; yabai -m display --focus north)
+#KeyClu[Warp window]: East
+alt + shift - l : yabai -m window --warp east  || $(yabai -m window --display east; yabai -m display --focus east)
+
+#----------------------------------------------------------------------------------------
+# Focus first/recent/last space
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Focus space] Focus recent space \
+alt - 0x2A : yabai -m space --focus recent
+#KeyClu[Focus space] Focus last space [
+alt - 0x21 : yabai -m space --focus prev || yabai -m space --focus last
+#KeyClu[Focus space] Focus first space ]
+alt - 0x1E : yabai -m space --focus next || yabai -m space --focus first
+
+#----------------------------------------------------------------------------------------
+# Rotate windows axis
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Rotate windows]: Flip the tree horizontally
+alt - x : yabai -m space --mirror x-axis
+#KeyClu[Rotate windows]: Flip the tree vertically
+alt - y : yabai -m space --mirror y-axis
+#KeyClu[Rotate windows]: Rotate clock-wise
+alt - r : yabai -m space --rotate 270
+#KeyClu[Rotate windows]: Rotate counter clock
+alt + shift - r : yabai -m space --rotate 90
+
+#----------------------------------------------------------------------------------------
+# Zoom window, parent, native, and fullscreen
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Zoom window]: toggle zoom-parent
+alt - p : yabai -m window --toggle zoom-parent
+#KeyClu[Zoom window]: toggle zoom-fullscreen
+alt - m : yabai -m window --toggle zoom-fullscreen
+#KeyClu[Zoom window]: toggle native-fullscreen
+alt - n : yabai -m window --toggle native-fullscreen
+
+#----------------------------------------------------------------------------------------
+# Resize windows
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Resize window]: Right
+ctrl + shift - l : yabai -m window --resize right:100:-200
+#KeyClu[Resize window]: Left
+ctrl + shift - h : yabai -m window --resize left:100:-200
+#KeyClu[Resize window]: top
+ctrl + shift - k : yabai -m window --resize top:100:-200
+#KeyClu[Resize window]: bottom
+ctrl + shift - j : yabai -m window --resize bottom:100:-200
+#KeyClu[Resize window]: Balance
+ctrl + shift - 0 : yabai -m space --balance
+#KeyClu[Resize window]: Move to left 1/3
+ctrl + shift - m : yabai -m window --grid 1:3:0:0:2:1
+
+#----------------------------------------------------------------------------------------
+# Toggles
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Toggle]: Picture-in-picture
+cmd - p : yabai -m window --toggle sticky --toggle pip
+#KeyClu[Toggle]: Float / Unfloat window
+alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+#KeyClu[Toggle]: Toggle window split type
+alt + shift - s : yabai -m window --toggle split
+#KeyClu[Toggle]: Enable / Disable gaps in current workspace
+alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+#----------------------------------------------------------------------------------------
+# Misc/Common
+#----------------------------------------------------------------------------------------
+
+# Reload Yabai
+ctrl + alt + cmd - r : yabai --restart-service
+# Restart Sketchybar
+ctrl + alt + cmd - s : sketchybar --reload
+# Show shortcuts
+alt - s : /Applications/KeyClu.app/Contents/MacOS/KeyClu --toggle-panel --sheet skhd
+
+#----------------------------------------------------------------------------------------
+# Launch Apps hotkeys
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Launch apps]: Kitty instance
+cmd - return : kitty --single-instance -d ~
+#KeyClu[Launch apps]: Kitty, insert east
+cmd - h : yabai -m window --insert east && kitty --single-instance -d ~
+#KeyClu[Launch apps]: Kitty, insert south
+cmd - j : yabai -m window --insert south && kitty --single-instance -d ~
+
+#----------------------------------------------------------------------------------------
+# Stack layout
+#----------------------------------------------------------------------------------------
+
+#KeyClu[Stack layout]: Focus next window
+alt + shift - n : yabai -m window --focus stack.next
+#KeyClu[Stack layout]: Focus previous window
+alt + shift - p : yabai -m window --focus stack.prev
+
+#----------------------------------------------------------------------------------------
+# Disabled
+#----------------------------------------------------------------------------------------
+
+## alacritty
+#hyper - return : alacritty msg create-window; open -a alacritty
+#hyper - j : yabai -m window --insert south && alacritty-new
+#hyper - h : yabai -m window --insert east && alacritty-new
+
+# # resize window mode
+# :: resize
+# hyper - r ; resize
+# resize < escape ; default
+# resize < return ; default
+# resize < h : yabai3 resize shrink width 96
+# resize < j : yabai3 resize grow height 64
+# resize < k : yabai3 resize shrink height 64
+# resize < l : yabai3 resize grow width 96
+
+# #Toggle sticky (window appear in all windows)
+#alt - v : yabai -m window --toggle sticky --toggle float --grid 3:3:3:0:1:3;
+#alt - t: yabai -m window --layer (if [ (yabai -m query --windows --window | jq --raw-output .layer) = 'below' ]; echo 'normal'; else; echo 'below'; end)
+
+#----------------------------------------------------------------------------------------
+# Experimental
+#----------------------------------------------------------------------------------------
+
+## Swap window
+#   (keys: [, ] ) - listed in order of the following;
+#alt + shift - 0x21 : yabai -m window --swap west  || $(yabai -m window --display west; yabai -m display --focus west)
+#alt + shift - 0x1E : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
+
+# #KeyClu[Display Management]: move window west
+# alt + shift - w : yabai -m window --display west; yabai -m display --focus west
+# #KeyClu[Display Management]: move window east
+# alt + shift - e : yabai -m window --display east; yabai -m display --focus east
