@@ -139,15 +139,17 @@ alt - n : yabai -m window --toggle native-fullscreen
 #KeyClu[Resize window]: Right
 ctrl + shift - l : yabai -m window --resize right:100:-200
 #KeyClu[Resize window]: Left
-ctrl + shift - h : yabai -m window --resize left:100:-200
+ctrl + shift - h : yabai -m window --resize left:-100:100
 #KeyClu[Resize window]: top
 ctrl + shift - k : yabai -m window --resize top:100:-200
 #KeyClu[Resize window]: bottom
-ctrl + shift - j : yabai -m window --resize bottom:100:-200
+ctrl + shift - j : yabai -m window --resize bottom:100:-100
 #KeyClu[Resize window]: Balance
 ctrl + shift - 0 : yabai -m space --balance
 #KeyClu[Resize window]: Move to left 1/3
 ctrl + shift - m : yabai -m window --grid 1:3:0:0:2:1
+#KeyClu[Resize window]: Change sticky
+ctrl + shift - s : yabai -m window --toggle sticky
 
 #----------------------------------------------------------------------------------------
 # Toggles

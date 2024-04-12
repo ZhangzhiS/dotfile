@@ -36,16 +36,17 @@ unset __conda_setup
 
 # Created by `pipx` on 2023-02-09 00:31:14
 export PATH="$PATH:/Users/zhangzhi/.local/bin"
+export PATH="/Users/zhangzhi/.local/share/solana/install/active_release/bin:$PATH"
 #
 export LC_ALL=zh_CN.UTF-8
 
 
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
+# function yy() {
+# 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+# 	yazi "$@" --cwd-file="$tmp"
+# 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+# 		cd -- "$cwd"
+# 	fi
+# 	rm -f -- "$tmp"
+# }

@@ -26,7 +26,7 @@ yabai -m config window_origin_display focused
 yabai -m config window_placement second_child
 
 # # 浮动窗口是否置顶
-yabai -m config window_topmost off
+# yabai -m config window_topmost off
 
 # 窗口阴影值
 # - on: 总是展示
@@ -41,25 +41,24 @@ yabai -m config window_opacity on
 # 激活窗口和普通窗口切换时，*不透明度的过渡时间*（仅当 window_opacity on 时才有效）
 yabai -m config window_opacity_duration 0.15
 # *激活*窗口的不透明度（仅当 window_opacity on 时才有效）
-yabai -m config active_window_opacity 1
+yabai -m config active_window_opacity 0.95
 # *普通*窗口不透明度（仅当 window_opacity on 时才有效）
-yabai -m config normal_window_opacity 0.95
+yabai -m config normal_window_opacity 0.90
 
 
 # # 窗口边框
 # # - on: 总是展示
 # # - off: 总是关闭
-yabai -m config window_border                off
+# yabai -m config window_border                off
 # # 窗口*边框宽度*（单位 px）
-yabai -m config window_border_width 1
+# yabai -m config window_border_width 1
 # # 激活窗口的边框颜色
 # yabai -m config active_window_border_color   0xff775759
-yabai -m config active_window_border_color 0xff8CABC8
 # # 普通窗口的边框颜色
 # yabai -m config normal_window_border_color   0xff555555
 # yabai -m config insert_feedback_color        0xffd75f5f
-yabai -m config normal_window_border_color 0xff2a2f38
-yabai -m config insert_feedback_color 0xff9dd274
+# yabai -m config normal_window_border_color 0xff2a2f38
+# yabai -m config insert_feedback_color 0xff9dd274
 
 
 # 所有窗口都使用相同比例的空间
@@ -131,7 +130,9 @@ yabai -m config right_padding 8
 yabai -m config window_gap 3
 
 # yabai -m config window_animation_duration    0.00
+yabai -m config window_animation_duration  0.5 
 
+yabai -m config window_animation_easing ease_out_quint 
 # ------------------------------------------------------------------------------------- #
 # ---------------------------------specific apps--------------------------------------- #
 # ------------------------------------------------------------------------------------- #
@@ -149,12 +150,7 @@ yabai -m config window_gap 3
 yabai -m rule --add app="^iStat*" sticky=on
 
 # disable specific apps
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^System Information$" sticky=on manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Preview$" manage=off
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^活动监视器|Preview|Calculator|System Preferences|System Settings|System Information$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WeChat$" manage=off
 yabai -m rule --add app="^Microsoft To Do$" manage=off
@@ -162,17 +158,17 @@ yabai -m rule --add app="^微信$" manage=off
 yabai -m rule --add app="^企业微信$" manage=off
 yabai -m rule --add app="^系统设置$" manage=off
 yabai -m rule --add app="^访达$" manage=off
+yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^HapiGo$" manage=off
-yabai -m rule --add app="^rubick$" manage=off
+yabai -m rule --add app="^AriaNg Native$" manage=off
 yabai -m rule --add app="^Obsidian$" manage=off
+yabai -m rule --add app="^Telegram$" manage=off
 yabai -m rule --add app="^Font Book$" manage=off
-yabai -m rule --add app="^NeatDownloadManager$" manage=off
 yabai -m rule --add app="^Tencent Lemon$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
-# yabai -m rule --add app="^TencentMeeting$" manage=off
-# yabai -m rule --add app="^(哔哩哔哩)$" title!="^(哔哩哔哩 \(゜-゜\)つロ 干杯~-bilibili)$" manage=off layer=above
-yabai -m rule --add app="^Google Chrome$" title="^MetaMask - Google Chrome$" manage=off
+yabai -m rule --add app="^Electron$" manage=off
+yabai -m rule --add app="^ToDesk$" manage=off
+yabai -m rule --add app="^Google Chrome$" title="^MetaMask|OKX Wallet$" manage=off
 
 echo "yabai configuration loaded.."
 
