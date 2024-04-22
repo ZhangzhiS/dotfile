@@ -14,7 +14,7 @@ return {
         "lua_ls",
         -- add more arguments for adding more language servers
         "ruff_lsp",
-        "ast_grep"
+        "pyright",
       })
     end,
   },
@@ -28,7 +28,7 @@ return {
         "prettier",
         "stylua",
         -- add more arguments for adding more null-ls sources
-        "ruff"
+        "ruff",
       })
     end,
   },

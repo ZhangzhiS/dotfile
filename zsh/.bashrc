@@ -50,3 +50,4 @@ export LC_ALL=zh_CN.UTF-8
 # 	fi
 # 	rm -f -- "$tmp"
 # }
+. "$HOME/.cargo/env"
