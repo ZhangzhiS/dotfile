@@ -150,7 +150,7 @@ yabai -m config window_animation_easing ease_out_quint
 yabai -m rule --add app="^iStat*" sticky=on
 
 # disable specific apps
-yabai -m rule --add app="^RustDesk|活动监视器|Preview|Calculator|System Preferences|System Settings|System Information$" manage=off
+yabai -m rule --add app="^DBeaver|RustDesk|活动监视器|Preview|Calculator|System Preferences|System Settings|System Information$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^WeChat$" manage=off
 yabai -m rule --add app="^Microsoft To Do$" manage=off
