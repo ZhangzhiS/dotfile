@@ -180,11 +180,11 @@ alt - s : /Applications/KeyClu.app/Contents/MacOS/KeyClu --toggle-panel --sheet 
 #----------------------------------------------------------------------------------------
 
 #KeyClu[Launch apps]: Kitty instance
-cmd - return : kitty --single-instance -d .
+cmd - return : kitty --single-instance -d ~
 #KeyClu[Launch apps]: Kitty, insert east
-cmd - h : yabai -m window --insert east && kitty --single-instance -d .
+cmd - h : yabai -m window --insert east && kitty --single-instance -d ~
 #KeyClu[Launch apps]: Kitty, insert south
-cmd - j : yabai -m window --insert south && kitty --single-instance -d .
+cmd - j : yabai -m window --insert south && kitty --single-instance -d ~
 
 #----------------------------------------------------------------------------------------
 # Stack layout

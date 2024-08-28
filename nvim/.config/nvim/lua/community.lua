@@ -25,4 +25,6 @@ return {
   { import = "astrocommunity.completion.tabnine-nvim" },
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- lua/astrocommunity/editing-support/bigfile-nvim
+  { import = "astrocommunity.editing-support.bigfile-nvim" },
 }

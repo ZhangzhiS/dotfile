@@ -37,6 +37,7 @@ unset __conda_setup
 
 # Created by `pipx` on 2023-02-09 00:31:14
 export PATH="$PATH:/Users/zhangzhi/.local/bin"
+export PATH="$PATH:/Users/zhangzhi/go/bin"
 export PATH="/Users/zhangzhi/.local/share/solana/install/active_release/bin:$PATH"
 #
 export LC_ALL=zh_CN.UTF-8
