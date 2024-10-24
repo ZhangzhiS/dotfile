@@ -41,7 +41,7 @@ yabai -m config window_opacity on
 # 激活窗口和普通窗口切换时，*不透明度的过渡时间*（仅当 window_opacity on 时才有效）
 yabai -m config window_opacity_duration 0.15
 # *激活*窗口的不透明度（仅当 window_opacity on 时才有效）
-yabai -m config active_window_opacity 1
+yabai -m config active_window_opacity 0.99
 # *普通*窗口不透明度（仅当 window_opacity on 时才有效）
 yabai -m config normal_window_opacity 0.90
 
